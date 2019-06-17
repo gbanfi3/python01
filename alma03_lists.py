@@ -55,21 +55,55 @@
 #         for i in meal:
 #             print(i)
 
-string = "1234567890"
+# string = "1234567890"
 # for i in string:
 #     print(i)
 
-my_iterator = iter(string)
-print(my_iterator)
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
-print(next(my_iterator))
+# my_iterator = iter(string)
+# print(my_iterator)
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+# print(next(my_iterator))
+
+# for i in string:
+#     print(i)
+#
+# for i in iter(string):
+#     print(i)
+
+# a = list(string)
+# a_iter = iter(a)
+# for i in range(len(a)):
+#     print(next(a_iter))
+
+# print(list(range(10)))
+# even = list(range(0,10,2))
+# odd = list(range(1,10,2))
+# print(even)
+
+# aa = "qwertzujhgfdsa"
+# print(aa[6])
+# print(aa.index("u"))
+
+# sevens = range(7, 1000000, 7)
+# i = int(input("he?: "))
+# if i in sevens:
+#     print("osztható")
+
+a = range(0, 100)
+myrange = a[3:40:3]
+print(myrange)
+
+for i in myrange:
+    print(i)
+
+print('=' * 40)
