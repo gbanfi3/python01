@@ -99,11 +99,25 @@
 # if i in sevens:
 #     print("osztható")
 
-a = range(0, 100)
-myrange = a[3:40:3]
-print(myrange)
+# a = range(0, 100)
+# myrange = a[3:40:3]
+# print(myrange)
+#
+# for i in myrange:
+#     print(i)
+#
+# print('=' * 40)
 
-for i in myrange:
-    print(i)
+# a = range(0,100)
+# for i in a[::-2]:
+#     print(i)
+#
+# for i in range(99,0,-2):
+#     print(i)
 
-print('=' * 40)
+a = "robag ifnab"
+print(a[::-1])
+
+o = range(0, 100, 4)
+oo = o[::5]
+print(oo)
