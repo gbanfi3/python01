@@ -20,10 +20,11 @@ for dirname, dirnames, filenames in os.walk(dirr):
         filesize = os.stat(filepath).st_size
         filenamesAllList.append((filename, filesize, filepath))
 
+        kulcs = filename + "xxx" + str(filesize)
         if filename in filenamesAllDict.keys():
-            filenamesAllDict[filename] +=1
+            filenamesAllDict[kulcs] +=1
         else:
-            filenamesAllDict[filename] = 1
+            filenamesAllDict[kulcs] = 1
 
 #pp.pprint(filenamesAllDict)
 #pp.pprint(filenamesAllList)
