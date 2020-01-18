@@ -1,4 +1,6 @@
 import os
+import operator
+import pprint
 
 filenamesAllDict = {}
 filenamesAllList = []
@@ -16,5 +18,10 @@ for dirname, dirnames, filenames in os.walk('/home/gbanfi3/alma'):
         else:
             filenamesAllDict[filename] = 1
 
-print(filenamesAllDict)
-print(filenamesAllList)
+sortedFilenamesAllList =sorted(filenamesAllDict.items(), key=operator.itemgetter(0))
+
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(filenamesAllDict)
+pp.pprint(filenamesAllList)
+pp.pprint(sortedFilenamesAllList)
+
