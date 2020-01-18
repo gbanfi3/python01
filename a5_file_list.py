@@ -2,12 +2,14 @@ import os
 import operator
 from operator import itemgetter
 import pprint
-
 pp = pprint.PrettyPrinter(indent=4)
+
 
 #dirr = '/home/gbanfi3/alma'
 #dirr = '/media/gbanfi3/WD2T/tanulás/logika/'
-dirr = '/media/gbanfi3/WD2T/tanulás/IT/'
+#dirr = '/media/gbanfi3/WD2T/tanulás/IT/'
+dirr = '/media/gbanfi3/WD2T/tanulás/draw/'
+filesizeLimit = 100000
 
 filenamesAllDict = {}
 filenamesAllList = []
@@ -20,7 +22,11 @@ for dirname, dirnames, filenames in os.walk(dirr):
         filesize = os.stat(filepath).st_size
         filenamesAllList.append((filename, filesize, filepath))
 
-        kulcs = filename + "xxx" + str(filesize)
+        if filesize < filesizeLimit:
+            continue
+
+        #kulcs = filename + "xxx" + str(filesize)
+        kulcs = filename
         if filename in filenamesAllDict.keys():
             filenamesAllDict[kulcs] +=1
         else:
