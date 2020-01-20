@@ -17,3 +17,9 @@ print('x' + e + 'x')
 
 f='alma'.center(20,'.')
 print(f)
+
+g='     kjdfksjfkja  jfa fj afj  j  '
+print('.' + g.strip() + '.')
+print('.' + g.strip().strip('kjd') + '.')
+
+print((g.replace('j', 'J')))
