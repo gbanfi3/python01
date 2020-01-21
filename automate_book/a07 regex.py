@@ -1,7 +1,7 @@
 import re
 
 szoveg = r'ez itt a telefonszámom: (36)-(36)-20-1234567. jó mi?'
-telszamRegex = re.compile('(\((\d\d)\)-)*(\d\d)-(\d\d\d\d\d\d\d)')
+telszamRegex = re.compile('(\((\d\d)\)-)+(\d\d)-(\d\d\d\d\d\d\d)')
 mo = telszamRegex.search(szoveg)
 if not mo == None:
     print(mo)
